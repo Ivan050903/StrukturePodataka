@@ -1,0 +1,3 @@
+﻿  1zad.c
+C:\Users\ivanz\Desktop\StrukturePodataka\1zad\1zad\1zad\1zad.c(80,28): warning C4098: 'read_stud': 'void' function returning a value
+  1zad.vcxproj -> C:\Users\ivanz\Desktop\StrukturePodataka\1zad\1zad\Debug\1zad.exe

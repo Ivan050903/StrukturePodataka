@@ -4,12 +4,12 @@
 #include <string.h>
 
 #define ERROR_OPENING_FILE -1
-#define BUFFER_SIZE 50
+#define BUFFER_SIZE 1024
 #define max_br_bodova 100
 
 typedef struct _student {
-	char ime[BUFFER_SIZE];
-	char prezime[BUFFER_SIZE];
+	char ime[50];
+	char prezime[50];
 	float bod;
 }Student;
 
@@ -21,7 +21,7 @@ int main()
 {
 	int broj_stud = 0;
 	Student* studenti = NULL;
-	char filename[] = "popis.txt";
+	char filename[] = "studenti.txt";
 
 	//broj redaka u datoteci
 	broj_stud = count_rows(filename);
@@ -60,7 +60,6 @@ int count_rows(char* filename)
 
 	while (!feof(fp)) {
 		fgets(buffer, BUFFER_SIZE, fp);
-		// sscanf() - domaci rad
 		++row_count;
 	}
 
@@ -88,6 +87,7 @@ void read_stud(char* filename, Student* studenti, int broj_stud)
 	fclose(fp);
 
 	return;
+
 }
 
 void print_stud(Student* studenti, int broj_stud)

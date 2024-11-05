@@ -1,0 +1,3 @@
+﻿  3zad.c
+C:\Users\ivanz\Desktop\StrukturePodataka\3zad\3zad\3zad\3zad.c(51,12): warning C4566: character represented by universal-character-name '\u00C8' cannot be represented in the current code page (1250)
+  3zad.vcxproj -> C:\Users\ivanz\Desktop\StrukturePodataka\3zad\3zad\Debug\3zad.exe
