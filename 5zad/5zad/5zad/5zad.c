@@ -7,15 +7,15 @@
 typedef struct element Element;
 typedef Element* Position;
 struct element {
-    int number;
+    double number;
     Position next;
 };
 
 int calculateFromPostfix(char* fileName, Position head, double* result, char* buffer);
 int readPostfixFromFile(char* fileName, char* buffer);
-int pushElement(Position head, int n);
+int pushElement(Position head, double n);
 int calculate(Position head, char operation, double* result);
-int pop(Position head, int* number);
+int pop(Position head, double* number);
 
 int main() {
 
@@ -74,7 +74,7 @@ int readPostfixFromFile(char* fileName, char* buffer) {
     return 0;
 }
 
-int pushElement(Position head, int n) {
+int pushElement(Position head, double n) {
 
     Position newElement = (Position)malloc(sizeof(Element));
     if (newElement == NULL) {
@@ -89,9 +89,9 @@ int pushElement(Position head, int n) {
 }
 
 int calculate(Position head, char operation, double* result) {
-    int number1, number2;
+    double number1, number2;
 
-    if (pop(head, &number1) || pop(head, &number2) == 1) {
+    if (pop(head, &number1) || pop(head, &number2)) {
         return 1;
     }
 
@@ -124,7 +124,7 @@ int calculate(Position head, char operation, double* result) {
     return 0;
 }
 
-int pop(Position head, int* number) {
+int pop(Position head, double* number) {
     if (head->next == NULL) {
         printf("list is empty");
         return 1;
