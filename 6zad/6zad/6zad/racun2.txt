@@ -1,0 +1,5 @@
+2024-12-22
+mrkva 20 1.5
+jabuka 10 2.5
+naranca 20 1.5
+banana 15 3.4
