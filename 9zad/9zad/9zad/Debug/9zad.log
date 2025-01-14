@@ -1,0 +1,3 @@
+﻿  9zad.c
+C:\Users\ivanz\Desktop\StrukturePodataka\9zad\9zad\9zad\9zad.c(50,21): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  9zad.vcxproj -> C:\Users\ivanz\Desktop\StrukturePodataka\9zad\9zad\Debug\9zad.exe
